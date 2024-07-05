@@ -1738,7 +1738,7 @@ blockquote cite:before {
 .full-width-header .rs-header .menu-area .logo-area img {
   transition: 0.4s;
   -webkit-transition: 0.4s;
-  max-height: 50px;
+  max-height:90px;
 }
 .full-width-header .rs-header .menu-area .logo-area .dark {
   display: none;
@@ -1749,7 +1749,7 @@ blockquote cite:before {
 .full-width-header .rs-header .menu-area .rs-menu-area {
   display: flex;
   align-items: center;
-  margin-right: 72px;
+  margin-right: 20px;
 }
 .full-width-header .rs-header .menu-area .main-menu {
   position: unset;
@@ -1847,7 +1847,7 @@ blockquote cite:before {
 }
 .full-width-header .rs-header .menu-area.sticky .logo-area a .sticky-logo {
   display: block;
-  max-height: 50px;
+  max-height: 90px;
 }
 .full-width-header .rs-header .menu-area.sticky .logo-area a .normal-logo {
   display: none;
@@ -2285,7 +2285,7 @@ blockquote cite:before {
   padding-bottom: 25px;
 }
 .full-width-header .right_menu_togle .canvas-logo img {
-  max-height: 28px;
+  max-height: 78px;
 }
 .full-width-header .right_menu_togle .offcanvas-text p {
   font-size: 16px;
@@ -8835,8 +8835,11 @@ body .search-modal .close:hover {
   text-align: center;
 }
 .loader .loader-icon img {
+  position: absolute;
   animation: loaderpulse alternate 900ms infinite;
-  width: 30px;
+  width: 70px;
+  animation: loaderspin 1.8s infinite ease-in-out;
+  -webkit-animation: loaderspin 1.8s infinite ease-in-out;
 }
 .woocommerce .quantity input[type="number"]::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -9141,4 +9144,25 @@ body .search-modal .close:hover {
   padding-bottom: 20px;
   margin-bottom: 50px;
   border-bottom: 1.5px solid #eaeaea;
+}
+
+
+.float-whatsapp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:15px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  margin-bottom: 60px;
+}
+
+.my-float{
+	margin-top:16px;
 }
