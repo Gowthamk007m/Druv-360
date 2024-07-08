@@ -1660,6 +1660,10 @@ blockquote cite:before {
   display: block;
   max-height: 50px;
 }
+.full-width-header .rs-header .topbar-area.style2 .row-table .header-logo .logo-area a .normal-logo2 {
+  display: block;
+  max-height: 50px;
+}
 .full-width-header .rs-header .topbar-area.style2 .row-table .header-logo .logo-area a .sticky-logo {
   display: none;
   max-height: 50px;
@@ -1848,10 +1852,15 @@ blockquote cite:before {
   background: #fff;
 }
 .full-width-header .rs-header .menu-area.sticky .logo-area a .sticky-logo {
+  position: fixed;
   display: block;
-  max-height: 90px;
+  max-height: 140px;
+  top: -30px;
 }
 .full-width-header .rs-header .menu-area.sticky .logo-area a .normal-logo {
+  display: none;
+}
+.full-width-header .rs-header .menu-area.sticky .logo-area a .normal-logo2 {
   display: none;
 }
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu > li > a {
@@ -2090,6 +2099,9 @@ blockquote cite:before {
 .full-width-header .rs-header.style3 .box-layout .row-table .menu-responsive .sticky .logo-area a .normal-logo {
   display: none;
 }
+.full-width-header .rs-header.style3 .box-layout .row-table .menu-responsive .sticky .logo-area a .normal-logo2 {
+  display: none;
+}
 .full-width-header .rs-header.style3 .box-layout .row-table .menu-responsive .sticky .main-menu .rs-menu ul.nav-menu > li > a {
   color: #101010 !important;
 }
@@ -2287,7 +2299,7 @@ blockquote cite:before {
   padding-bottom: 25px;
 }
 .full-width-header .right_menu_togle .canvas-logo img {
-  max-height: 200px;
+  max-height: 150px;
 }
 .full-width-header .right_menu_togle .offcanvas-text p {
   font-size: 16px;
@@ -4682,7 +4694,7 @@ body .search-modal .close:hover {
   display: block;
   width: 100%;
   padding: 20px 30px 0 30px;
-  height: 65px;
+  height: auto;
   line-height: 1.3;
   font-size: 18px;
   font-weight: 600;
@@ -9167,4 +9179,84 @@ body .search-modal .close:hover {
 
 .my-float{
 	margin-top:16px;
+}
+
+
+@media (max-width: 768px) {
+  .normal-logo2 {
+      width: 100px; /* Larger size for mobile view */
+      min-height: 100px;
+      padding: 0;
+      padding-bottom: 10px;
+      position: relative;
+      top: -30px; /* Adjust this value to move the image higher */
+      left: 10px; /* Adjust this value or remove it if not needed */
+  }
+}
+
+@media (max-width: 992px) {
+  .normal-logo2 {
+    width: 100px; /* Larger size for mobile view */
+    min-height: 100px;
+    padding: 0;
+    padding-bottom: 10px;
+    position: relative;
+    top: -30px; /* Adjust this value to move the image higher */
+    left: 10px; //* Adjust this value or remove it if not needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .normal-logo {
+      width: 150px; /* Larger size for mobile view */
+      min-height: 150px;
+      padding: 0;
+      padding-bottom: 10px;
+      position: fixed;
+      top: 10px; /* Adjust this value to move the image higher */
+      left: 10px; /* Adjust this value or remove it if not needed */
+  }
+}
+/* Default font size */
+@media (max-width: 992px) {
+  .normal-logo {
+      width: 150px; /* Larger size for mobile view */
+      min-height: 150px;
+      padding: 0;
+      padding-bottom: 10px;
+      position: fixed;
+      top: 10px; /* Adjust this value to move the image higher */
+      left: 10px; /* Adjust this value or remove it if not needed */
+  }
+}
+/* Mobile view */
+@media (max-width: 768px) {
+  h6, .pricing-table-header h3, .pricing-table-price span, .btn-part a {
+      font-size: 14px; /* Smaller font size for mobile view */
+  }
+
+  /* Alternatively, target the fs-5 class specifically */
+  .fs-5 {
+      font-size: 14px; /* Smaller font size for mobile view */
+  }
+}
+/* Add this CSS to your stylesheet */
+.card-header .card-link h6{
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-header .card-link h6{
+      font-size: 17px;
+  padding-right: 20px; /* Default font size */
+  /* Default font size */
+  /* Font size for tablets and small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-header .card-link h6{
+      font-size: 17px; 
+  /* Font size for mobile phones */
+  }
 }
