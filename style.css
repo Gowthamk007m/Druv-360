@@ -9260,3 +9260,95 @@ body .search-modal .close:hover {
   /* Font size for mobile phones */
   }
 }
+
+
+.page {
+  max-width: 640px;
+  margin: 0px auto 30px auto;}
+
+.panel {
+  background-color: #fff;
+  color: #666;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: auto;}
+
+
+
+  /*****************  No JS ***************/
+#billboard {text-align: center;}
+.js-warning {display: none;}
+
+.no-js .js-warning {
+  display: block;
+  border: 3px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  color: #db5391;
+  padding: 10px;}
+
+/********** SLIDER **********/
+.slider {
+  max-width: 940px;
+  height: auto;
+
+  margin: 0px auto 30px auto;}
+
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    border: #0082F1;
+    border-radius: 4px;
+    padding: 10px;
+    height: 730px;}
+
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;}
+
+.slide:first-child {
+    display: block;}
+
+
+/********** BUTTONS **********/
+.slide-buttons {
+  text-align: center;}
+
+.slide-btn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;}
+
+.slide-btn.active, .slide-btn:hover {
+  color: #ed8e6c;
+  cursor: pointer;}
+
+
+
+  /* Mobile view */
+@media (max-width: 768px) {
+  .slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height: 300px;}
+}
+/* Add this CSS to your stylesheet */
+
+
+
+
+@media (max-width: 480px) {
+  .slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height: 300px;}
+}
+  
